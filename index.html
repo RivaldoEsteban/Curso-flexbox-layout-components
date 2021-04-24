@@ -5,10 +5,79 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles-global.css">
+  <meta property="og:title" content="Mi proyecto del curso Flexbox Layout y Componentes" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rivaldoesteban.github.io/Curso-flexbox-layout-components/" />
+  <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
   <title>Spotifu 2.0</title>
 </head>
-<body>
-  <i class="icon icon-library"></i>
-  <p>hola mundo</p>
+<body class="body">
+  <div class="sidebar">
+    <header class="logo">
+      <a href="/" aria-current="pag">
+        <img src="images/spotifu-logo.png" class="logo-image" alt="Logo de Spotifu" title="Logo de Spotifu">
+      </a>
+    </header>
+    <nav class="menu" arias-label="menu principal">
+      <ul class="menu-list">
+        <li class="menuIten is-active">
+          <a href="/" class="link" aria-current="page">
+            <i class="icon-home" aria-hidden="true"></i>
+            <span>Inicio</span>
+          </a>
+        </li>
+        <li class="menuIten ">
+          <a href="#" class="link">
+            <i class="icon-search" aria-hidden="true"></i>
+            <span>Buscar</span>
+          </a>
+        </li>
+        <li class="menuIten">
+          <a href="#" class="link">
+            <i class="icon-creditCard" aria-hidden="true"></i>
+            <span>Premium</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="list biblioteca" aria-label="Tu biblioteca">
+      <h2 class="list-title">Tu biblioteca</h2>
+      <ul class="list-content">
+        <li class="list-item">
+          <a href="#" class="link">Creada para ti</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Escuchado recientemente</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Tus me gusta</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="list" aria-label="Playlist">
+      <h2 class="list-title">Playlist</h2>
+      <ul class="list-content">
+        <li class="list-item">
+          <span class="ellipsis">
+            <a href="#" class="link">Naruto al 100% para prog Naruto al 100% para prog Naruto al 100% para prog </a>
+          </span>
+        </li>
+        <li class="list-item"><a  href="#" class="link">Naruto al 100% para progr…</a></li>
+        <li class="list-item"><a  href="#" class="link">Para cantar en la ducha</a></li>
+        <li class="list-item"><a  href="#" class="link">Sin parar</a></li>
+        <li class="list-item"><a  href="#" class="link">Naruto openings</a></li>
+        <li class="list-item"><a  href="#" class="link">Boku no pico</a></li>
+        <li class="list-item"><a  href="#" class="link">This is Pokémon</a></li>
+        <li class="list-item"><a  href="#" class="link">Más populares de la semana</a></li>
+        <li class="list-item"><a  href="#" class="link">Mis pistas de shazam</a></li>
+        <li class="list-item"><a  href="#" class="link">Audio Library</a></li>
+        <li class="list-item"><a  href="#" class="link">Amor y otras</a></li>
+        <li class="list-item"><a  href="#" class="link">Latin</a></li>
+        <li class="list-item"><a  href="#" class="link">Pokemon</a></li>
+        <li class="list-item"><a  href="#" class="link">Para cantar</a></li>
+        <li class="list-item"><a  href="#" class="link">Yui</a></li>
+      </ul>
+    </nav>
+  </div>
 </body>
 </html>
