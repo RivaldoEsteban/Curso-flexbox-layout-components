@@ -1,0 +1,44 @@
+:root {
+  --sidebarInlineSize: 15rem;
+  --minBlockSize: 37.5rem;
+  --minInlineSize: 48rem;
+  --bottomSize: 5.5rem;
+}
+
+.layout {
+  min-inline-size: var(--minInlineSize);
+}
+
+.layout-block {
+  display: flex;
+}
+
+.layout-sidebar {
+  inline-size: var(--sidebarInlineSize);
+  flex-shrink: 0;
+  overflow: auto;
+  min-block-size: var(--minBlockSize);
+  background: var(--gray60);
+  /* max-block-size: 100%; */
+}
+
+.layout-main {
+  /* block-size: calc(100vh - var(--bottomSize)); */
+  overflow: auto;
+  min-block-size: var(--minBlockSize);
+}
+
+.layout-bottom {
+  background: var(--gray40);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-shrink: 0;
+  flex-grow: 1;
+  block-size: var(--bottomSize);
+}
+
+.layout-block.main {
+  height: calc(100vh - var(--bottomSize));
+}
