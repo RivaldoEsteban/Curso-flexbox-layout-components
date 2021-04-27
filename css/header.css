@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}
+
+@supports not (backdrop-filter: blur(8px)) {
+  .header {
+    background: var(--gray50);
+  }
+}
+
+@supports ((gap: 0.25rem) or (gap: 0.5rem) or (gap: 1rem) or (gap: 1.5rem)) {
+  .navigation-buttons-container {
+    margin: 0 1rem;
+  }
+  .navigation button:disabled {
+    margin: 0 0.5rem;
+  }
+  .menuIten a {
+    margin: 0 0.5rem;
+  }
+  .list-content {
+    margin: 0 0.5rem;
+  }
+  .playerControls {
+    margin: 0 0.25rem;
+  }
+  .playerControls-buttons {
+    margin: 0 1rem;
+  }
+  .playerPlayback {
+    margin: 0 1.5rem;
+  }
+  .player {
+    margin: 0 1.5rem;
+  }
+  .playlistB-details {
+    margin: 0 0.5rem;
+  }
+
+  .playlistList-container {
+    margin: 0 1rem;
+  }
+  .playlistList-content {
+    margin: 0 1rem;
+  }
+  .playlistList-top {
+    margin: 0 1rem;
+  }
+  .sidebar {
+    margin: 0 1.5rem;
+  }
+}
