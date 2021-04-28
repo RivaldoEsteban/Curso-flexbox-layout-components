@@ -39,22 +39,29 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
+  .date-song {
+    display: none;
+  }
   .time-song {
     display: none;
   }
-  .date-song {
+  /* .nameArtist {
     display: none;
-  }
+  } */
 }
 
-@media screen and (min-width: 1024px) {
-  .date-song {
-    display: block;
+@media screen and (max-width: 1200px) {
+  .nameArtist {
+    font-size: 12px;
+    /* display: none; */
   }
 }
 @media screen and (min-width: 1400px) {
   :root {
     font-size: 18px;
+  }
+  .song-content {
+    max-block-size: 15rem;
   }
 }

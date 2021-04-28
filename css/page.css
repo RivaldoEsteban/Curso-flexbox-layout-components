@@ -4,9 +4,6 @@
 @import "./header.css";
 @import "./sticky.css";
 
-.page {
-}
-
 .page-block {
   display: flex;
   flex-direction: column;
