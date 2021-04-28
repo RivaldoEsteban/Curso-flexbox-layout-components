@@ -28,7 +28,8 @@
 
 .navigation-prev i {
   position: relative;
-  left: -1px;
+  left: -1.5px;
+  top: 1px;
 }
 .navigation-next i {
   position: relative;

@@ -13,7 +13,6 @@
 .playlistList-content {
   display: flex;
   overflow-x: auto;
-  gap: 1rem;
   /* flex-wrap: wrap; */
 }
 

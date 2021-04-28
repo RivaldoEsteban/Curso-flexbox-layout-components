@@ -12,6 +12,7 @@
 @import "./page.css";
 @import "./layout.css";
 @import "./scrollbar.css";
+@import "./new-page.css";
 
 :root {
   font-size: 14px;
@@ -34,10 +35,25 @@
 
 @media screen and (min-width: 768px) {
   :root {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
-@media screen and (min-width: 1367px) {
+
+@media screen and (max-width: 1000px) {
+  .time-song {
+    display: none;
+  }
+  .date-song {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .date-song {
+    display: block;
+  }
+}
+@media screen and (min-width: 1400px) {
   :root {
     font-size: 18px;
   }
