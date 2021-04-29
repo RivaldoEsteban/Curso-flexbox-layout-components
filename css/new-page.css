@@ -3,10 +3,6 @@ body {
   margin: 0;
 }
 
-.layput-main-container {
-  flex: 1;
-}
-
 .nameArtist-button {
   background: var(--primary);
   font: var(--baseFont);
@@ -75,16 +71,6 @@ body {
   left: -4px;
 }
 
-.song-content {
-  max-block-size: 20em;
-  overflow: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding-bottom: 1rem;
-  /* align-items: center; */
-}
-
 .song {
   display: flex;
   align-items: center;
@@ -124,11 +110,7 @@ body {
 }
 
 .listSong-artist {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0 1rem;
+  padding-left: 1rem;
 }
 
 .name-song {
@@ -214,4 +196,24 @@ body {
 .song.title {
   color: var(--gray10);
   margin-bottom: 1rem;
+}
+
+.header-titleAlbum-container {
+  block-size: 25rem;
+}
+
+.listSong-artist {
+  block-size: calc(100% - 25rem);
+  overflow: auto;
+}
+
+.song-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.artist {
+  block-size: calc(99vh - 5.5rem);
 }

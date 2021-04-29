@@ -1,5 +1,4 @@
 ::-webkit-scrollbar {
-  background: red;
   inline-size: 0.5rem;
   block-size: 0.5rem;
 }

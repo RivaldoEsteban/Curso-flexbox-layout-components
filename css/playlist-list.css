@@ -1,19 +1,17 @@
 @import "./playlist-a.css";
 @import "./playlist-b.css";
 
-.playlistList {
-}
-
 .playlistList-container {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   gap: 1rem;
 }
 
 .playlistList-content {
   display: flex;
-  overflow-x: auto;
-  /* flex-wrap: wrap; */
+  overflow: auto;
+  gap: 1rem;
 }
 
 .playlistList-top {
