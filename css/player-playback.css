@@ -17,3 +17,9 @@
   position: relative;
   top: 1px;
 }
+
+@supports not (backdrop-filter: blur(8px)) {
+  .playerPlayback-progressTime {
+    margin: 0 1.5rem;
+  }
+}

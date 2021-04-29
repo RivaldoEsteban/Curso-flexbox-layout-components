@@ -35,3 +35,9 @@
   position: relative;
   left: 2px;
 }
+
+@supports not (backdrop-filter: blur(8px)) {
+  .navigation-prev {
+    margin-right: 0.5rem;
+  }
+}

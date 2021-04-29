@@ -22,3 +22,24 @@
   font: var(--baseFontBold);
   transition: color 0.2s;
 }
+
+@supports not (backdrop-filter: blur(8px)) {
+  .list {
+    margin-bottom: 1.5rem;
+  }
+}
+@supports not (backdrop-filter: blur(8px)) {
+  .list-title {
+    margin: 0 1rem;
+  }
+}
+@supports not (backdrop-filter: blur(8px)) {
+  .list-content {
+    margin: 0 1rem 1rem;
+  }
+}
+@supports not (backdrop-filter: blur(8px)) {
+  .list-item {
+    margin: 0.2rem 0;
+  }
+}
