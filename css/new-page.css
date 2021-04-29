@@ -39,7 +39,7 @@ body {
   font: var(--baseFont);
 }
 
-.filter-song button {
+.filter-song i {
   background: none;
 }
 
@@ -213,4 +213,26 @@ body {
 
 .artist {
   block-size: calc(100vh - 5.5rem);
+}
+
+@supports not (backdrop-filter: blur(8px)) {
+  .filter-song i {
+    margin-right: 0.5rem;
+  }
+}
+@supports not (backdrop-filter: blur(8px)) {
+  .buttonIcon.play {
+    margin-right: 1.25rem;
+  }
+}
+@supports not (backdrop-filter: blur(8px)) {
+  .album-song-buttons-content {
+    margin-right: 1.25rem;
+  }
+}
+
+@supports not (backdrop-filter: blur(8px)) {
+  .spacio-hidden {
+    margin-right: 1.25rem;
+  }
 }
