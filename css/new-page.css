@@ -109,10 +109,6 @@ body {
   margin: 0;
 }
 
-.listSong-artist {
-  padding-left: 1rem;
-}
-
 .name-song {
   margin: 0;
   max-inline-size: 18.95rem;
@@ -205,6 +201,7 @@ body {
 .listSong-artist {
   block-size: calc(100% - 25rem);
   overflow: auto;
+  padding-left: 2rem;
 }
 
 .song-content {
@@ -215,5 +212,5 @@ body {
 }
 
 .artist {
-  block-size: calc(99vh - 5.5rem);
+  block-size: calc(100vh - 5.5rem);
 }
